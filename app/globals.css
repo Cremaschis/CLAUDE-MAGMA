@@ -75,16 +75,16 @@
   }
 
   .btn-primary {
-    @apply relative inline-flex items-center justify-center gap-2 rounded-btn bg-primary px-7 py-3.5 text-sm font-semibold text-base transition-all duration-300 ease-out-expo hover:bg-brand hover:text-primary hover:-translate-y-0.5 hover:shadow-brand-glow active:translate-y-0;
+    @apply relative inline-flex items-center justify-center gap-2 rounded-btn bg-brand px-7 py-3.5 text-sm font-semibold text-primary transition-all duration-300 ease-out-expo hover:bg-brand-glow hover:text-primary hover:-translate-y-0.5 hover:shadow-brand-glow active:translate-y-0;
   }
 
   .btn-secondary {
-    @apply inline-flex items-center justify-center gap-2 rounded-btn border bg-transparent px-7 py-3.5 text-sm font-semibold text-primary transition-all duration-300 ease-out-expo;
-    border-color: rgba(255, 255, 255, 0.1);
+    @apply inline-flex items-center justify-center gap-2 rounded-btn border bg-white/[0.03] px-7 py-3.5 text-sm font-semibold text-primary transition-all duration-300 ease-out-expo;
+    border-color: rgba(255, 255, 255, 0.22);
   }
   .btn-secondary:hover {
-    border-color: rgba(255, 255, 255, 0.3);
-    background-color: rgba(255, 255, 255, 0.03);
+    border-color: rgba(255, 107, 53, 0.7);
+    background-color: rgba(255, 69, 0, 0.14);
   }
 }
 

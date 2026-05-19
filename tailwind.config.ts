@@ -16,8 +16,8 @@ const config: Config = {
         "border-base": "#262626",
         "border-strong": "#404040",
         primary: "#FAFAFA",
-        secondary: "#A3A3A3",
-        tertiary: "#737373",
+        secondary: "#C9C9C9",
+        tertiary: "#A8A8A8",
         disabled: "#525252",
         brand: {
           DEFAULT: "#FF4500",
