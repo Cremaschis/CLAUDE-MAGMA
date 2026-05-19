@@ -255,8 +255,8 @@ export const content = {
     productName: "MAGMA Starter",
     productDescription: "2 latas · 2 sabores · 40 pouches de 100mg",
     flavors: [
-      { name: "Lava Citrus", description: "Cítrico, refrescante" },
-      { name: "Volcanic Mint", description: "Menta fría, limpio" },
+      { name: "Lava Citrus", description: "Cítrico, refrescante", shopifyVariantId: "" },
+      { name: "Volcanic Mint", description: "Menta fría, limpio", shopifyVariantId: "" },
     ],
     price: "24.99",
     priceCurrency: "USD",

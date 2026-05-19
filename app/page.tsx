@@ -10,6 +10,7 @@ import { SocialProofSection } from "@/components/sections/SocialProofSection";
 import { OfferSection } from "@/components/sections/OfferSection";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { FinalCTASection } from "@/components/sections/FinalCTASection";
+import { CartDrawer } from "@/components/cart/CartDrawer";
 
 export default function HomePage() {
   return (
@@ -28,6 +29,7 @@ export default function HomePage() {
         <FinalCTASection />
       </main>
       <Footer />
+      <CartDrawer />
     </>
   );
 }
