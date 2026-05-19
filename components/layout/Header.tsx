@@ -7,6 +7,7 @@ import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { content } from "@/lib/content";
 import { cn } from "@/lib/utils";
+import { CartButton } from "@/components/cart/CartButton";
 import { easings } from "@/lib/motion";
 
 export function Header() {
@@ -77,6 +78,8 @@ export function Header() {
               >
                 {content.nav.cta.label}
               </Button>
+
+              <CartButton />
 
               <button
                 onClick={() => setMobileOpen(true)}

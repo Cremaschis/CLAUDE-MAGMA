@@ -110,3 +110,15 @@ Esta landing sigue el lenguaje de marcas premium-performance (WHOOP, Nike, ZYN, 
 ---
 
 Hecho con la skill `premium-brand-websites`. Para iterar o regenerar secciones, instalá la skill en Claude y mencioná MAGMA.
+
+## Setup Shopify Storefront (ya integrado)
+
+1. Crear `.env.local` con:
+
+```bash
+NEXT_PUBLIC_SHOPIFY_STORE_DOMAIN=magma-ar.myshopify.com
+NEXT_PUBLIC_SHOPIFY_STOREFRONT_ACCESS_TOKEN=xxx
+```
+
+2. Completar `shopifyVariantId` por sabor en `lib/content.ts` con formato `gid://shopify/ProductVariant/XXXXXXXXX`.
+3. El botón de checkout del carrito ahora crea un cart vía Storefront API y redirige automáticamente al `checkoutUrl`.
