@@ -75,7 +75,7 @@
   }
 
   .btn-primary {
-    @apply group relative inline-flex items-center justify-center gap-2 rounded-btn bg-primary px-7 py-3.5 text-sm font-semibold text-base transition-all duration-300 ease-out-expo hover:bg-brand hover:text-primary hover:-translate-y-0.5 hover:shadow-brand-glow active:translate-y-0;
+    @apply relative inline-flex items-center justify-center gap-2 rounded-btn bg-primary px-7 py-3.5 text-sm font-semibold text-base transition-all duration-300 ease-out-expo hover:bg-brand hover:text-primary hover:-translate-y-0.5 hover:shadow-brand-glow active:translate-y-0;
   }
 
   .btn-secondary {
