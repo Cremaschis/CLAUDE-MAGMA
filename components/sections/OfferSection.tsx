@@ -21,7 +21,7 @@ export function OfferSection() {
       id: "magma-energy",
       flavor: flavor.name,
       name: offer.productName,
-      price: offer.price,
+      price: Number.parseFloat(offer.price),
       image: "/images/magma-cherry.png",
       shopifyVariantId: flavor.shopifyVariantId,
     });
