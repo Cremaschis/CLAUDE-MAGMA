@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 import "./globals.css";
+import { CartProvider } from "@/lib/cart";
 
 // Fallback si no se quiere instalar el package `geist`:
 // import { Inter, JetBrains_Mono } from "next/font/google";
@@ -62,7 +63,7 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body className="font-sans bg-base text-primary antialiased">
-        {children}
+        <CartProvider>{children}</CartProvider>
       </body>
     </html>
   );

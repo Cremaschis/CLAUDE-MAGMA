@@ -4,6 +4,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, Check } from "lucide-react";
 import { content } from "@/lib/content";
+import { useCart } from "@/lib/cart";
 import { easings, viewportConfig } from "@/lib/motion";
 import { cn } from "@/lib/utils";
 
@@ -12,6 +13,20 @@ const e = easings.outExpo;
 export function OfferSection() {
   const { offer } = content;
   const [selectedFlavor, setSelectedFlavor] = useState(0);
+  const { addItem, openCart } = useCart();
+
+  function handleAdd() {
+    const flavor = offer.flavors[selectedFlavor];
+    addItem({
+      id: "magma-energy",
+      flavor: flavor.name,
+      name: offer.productName,
+      price: offer.price,
+      image: "/images/magma-cherry.png",
+      shopifyVariantId: flavor.shopifyVariantId,
+    });
+    openCart();
+  }
 
   return (
     <section id="shop" className="relative py-24 md:py-36 bg-elevated/30">
@@ -161,13 +176,10 @@ export function OfferSection() {
                   </span>
                 </div>
 
-                <a
-                  href={offer.cta.href}
-                  className="btn-primary w-full sm:w-auto"
-                >
+                <button onClick={handleAdd} className="btn-primary w-full sm:w-auto">
                   {offer.cta.label}
                   <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" />
-                </a>
+                </button>
 
                 <p className="mt-4 text-xs text-tertiary">{offer.reassurance}</p>
               </div>
